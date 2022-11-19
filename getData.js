@@ -17,8 +17,8 @@ descrData = document.querySelectorAll('.descrData');
 async function getResponse(text) {
     let response = await fetch('./base.json');
     let content = await response.json();
-    let svg = document.querySelector('path');
-    console.log(content);
+    let svg = document.querySelectorAll('path');
+    // console.log(content);
 
     let list = document.querySelector('.posts')
 
@@ -49,10 +49,15 @@ async function getResponse(text) {
             .removeClass('color1');
         let key;
         for (key in svg) {
-            if (svg[key] === $(this).attr('house')) {
-                svg[key].toggleClass('color1')
-                    .siblings()
-                    .removeClass('color1');
+            if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
+            // if(1==1){
+                // console.log(svg[key]);
+                svg[key].classList.add('color2');
+                // $(svg[key]).siblings();
+            }
+            else{
+                svg[key].classList.remove('color2');
+
             }
         }
     });

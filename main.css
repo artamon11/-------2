@@ -189,6 +189,9 @@ svg{
     background-color:lightgrey;
     opacity: 100%;
 }
+.color2{
+    opacity: 100%;
+}
 .hoverLi{
     user-select:none;
 }
