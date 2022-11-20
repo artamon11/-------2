@@ -191,6 +191,7 @@ svg{
 }
 .color2{
     opacity: 100%;
+    color: yellow !important;
 }
 .hoverLi{
     user-select:none;
