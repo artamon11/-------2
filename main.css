@@ -195,6 +195,10 @@ svg{
 }
 .hoverLi{
     user-select:none;
+    font-size: 20px;
+}
+li{
+    list-style-image: url(./img/fingerprint5.svg);
 }
 /* .hoverLi:hover{
     background-color:lightgrey;
