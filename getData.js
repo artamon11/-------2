@@ -45,31 +45,18 @@ async function getResponse(text) {
 
     $('li').on('mouseenter', function () {
         $(this).toggleClass('color1')
-            // .siblings()
-            // .removeClass('color1');
         let key;
         for (key in svg) {
             if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
-            // if(1==1){
-                // console.log(svg[key]);
                 svg[key].classList.add('color2');
-                // $(svg[key]).siblings();
             }
-            // else{
-            //     svg[key].classList.remove('color2');
-
-            // }
         }
     });
     $('li').on('mouseleave', function () {
         $(this).removeClass('color1')
-
         for (key in svg) {
             if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
-            // if(1==1){
-                // console.log(svg[key]);
                 svg[key].classList.remove('color2');
-                // $(svg[key]).siblings();
             }
         }
     });
