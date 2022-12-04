@@ -3,7 +3,7 @@
     background-repeat: no-repeat; */
     /* width: 1240px; */
 
-    width: 650px;
+    width: 900px;
     position: absolute;
     text-align: center;
     display: flex;
@@ -47,9 +47,8 @@
     "A D";
 
     row-gap: 10px;
-    grid-template-columns: 66.66% 33.33%;
-    grid-template-rows: 5% 10% 82.6%;
-
+    grid-template-columns: 900px 33.33%;
+    grid-template-rows: 5% 6% 87%;
 }
 .box-4{
     grid-area: A;
@@ -90,14 +89,14 @@
     background-color:white;
 }
 .lupa{
-    width:35px;
-    height: 35px;
+    width:50px;
+    height: 50px;
 }
 .main{
 
     width: 100%; 
-    max-width: 1000px;
-    height: 930px;
+    max-width: 1500px;
+    height: 1290px;
     margin-left: auto;
     margin-right: auto;
     display:grid;
