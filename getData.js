@@ -50,6 +50,9 @@ async function getResponse(text) {
             if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
                 svg[key].classList.add('color2');
             }
+            else{
+                svg[key].classList.add('color3');
+            }
         }
     });
     $('li').on('mouseleave', function () {
@@ -57,6 +60,9 @@ async function getResponse(text) {
         for (key in svg) {
             if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
                 svg[key].classList.remove('color2');
+            }
+            else{
+                svg[key].classList.remove('color3');
             }
         }
     });

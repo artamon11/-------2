@@ -192,6 +192,10 @@ svg{
     opacity: 100%;
     color: yellow !important;
 }
+.color3{
+    fill: rgb(243, 243, 243);
+    opacity: 100%;
+}
 .hoverLi{
     user-select:none;
     font-size: 20px;
