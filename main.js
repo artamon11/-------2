@@ -17,6 +17,6 @@ $('.part').on('mouseenter',
 )
 $('.part').on('mouseleave',
     function () {
-        $('.descr').value = "Адрес"
+        $('.descr').html(value = "");
     }
 )
