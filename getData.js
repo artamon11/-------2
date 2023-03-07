@@ -49,6 +49,7 @@ async function getResponse(text) {
         for (key in svg) {
             if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
                 svg[key].classList.add('color2');
+                $('.descr').html($(this).attr('house'));
             }
             else{
                 svg[key].classList.add('color3');
@@ -60,6 +61,7 @@ async function getResponse(text) {
         for (key in svg) {
             if (svg[key].getAttribute("descr-data") == $(this).attr('house')) {
                 svg[key].classList.remove('color2');
+                $('.descr').html(value = "");
             }
             else{
                 svg[key].classList.remove('color3');
